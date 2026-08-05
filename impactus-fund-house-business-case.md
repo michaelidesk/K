@@ -44,9 +44,34 @@ Name notes: "Serena Partners" resolves to Serena Industrial Partners, Madrid (de
 
 ---
 
-## Counsel panel - to be completed on verification
+## Counsel panel - verified figures to seek counsel from, network toward, or model (Aug 2026)
 
-_Being verified by name and current role - USA, UK, Greece, Cyprus figures for counsel, networking and modelling. Inserted on completion._
+| Geo | Name | Role | Why relevant |
+|---|---|---|---|
+| USA | Stephen Schwarzman / Jonathan Gray | Blackstone Chairman-CEO / President | The canonical single-to-multi-strategy playbook; Gray runs the platform-by-platform expansion |
+| USA | Marc Rowan | Apollo CEO and Chair | Credit / insurance permanent-capital convergence - the end-state fee annuity model |
+| USA | Howard Marks | Oaktree Co-Chairman | Intellectual anchor for distressed / NPL strategy - directly relevant to the Greek-Cypriot opportunity set |
+| USA | Marc Lipschultz / Doug Ostrover | Blue Owl Co-CEOs | Built a $300b+ multi-strategy house from scratch inside a decade - the most instructive template for a new builder |
+| USA | Ken Moelis | Moelis Exec Chairman (CEO until Oct 2025) | Playbook for launching an independent franchise against incumbents |
+| UK | Nikos Stathopoulos | BC Partners Chairman Europe | The most senior Greek in global PE (Athens-born, led Pharmathen, United Group) - the natural senior mentor and door-opener |
+| UK | Benoît Durteste | ICG CEO-CIO | Mono-line mezz house to listed multi-strategy - the closest structural analogue to this ambition |
+| UK | Rob Lucas | CVC CEO (succession underway) | Europe's largest multi-strategy platform; the DIF / Glendower / Marathon bolt-on model |
+| UK | Per Franzén | EQT CEO (London-based) | Europe's most aggressive multi-strategy expansion; the evergreen / ELTIF capital machine |
+| UK | Sir Simon Robey | Evercore Senior MD (Robey Warshaw sold 2025) | Ultra-lean relationship-led advisory economics |
+| GR | Apostolos Tamvakakis | EOS Capital Chairman, ex-NBG CEO | Banker-turned-fund-founder; the DFI-anchored Greek fund template |
+| GR | Alex Fotakidis | CVC Partner, Head of Greece | Led the €2.2b Hellenic Healthcare exit - the benchmark for institutional PE in Greece |
+| GR | Nikolaos Karamouzis | SMERemediumCap Exec Chairman, ex-Eurobank | Bank-restructuring credibility converted into an SME turnaround / special-sits franchise |
+| GR | George Linatsas | Alpha Bank IB chief (AXIA founder, acquired Dec 2025) | Central node for Greek-Cypriot capital-markets deal flow |
+| GR | Angeliki Frangou | Navios Chairwoman-CEO | Dominant figure in Greek shipping finance - anchor relationship for a maritime sub-fund |
+| GR | Antigoni Lymperopoulou | HDBI CEO | Greece's fund-of-funds anchor LP - the most practical LP door in Athens for a new manager |
+| CY | Savvas Liasis | ECM Partners Chairman | The closest live Cyprus analogue - new CySEC AIFM targeting €250m, CEE / SEE distressed mid-market |
+| CY | Yiannos Petri | Athlos Capital founder-CEO | Built the regulated retail fixed-income funnel (Sophic) this case copies |
+| CY | Panicos Nicolaou | Bank of Cyprus CEO, ACB President | Dominant figure in Cypriot finance - leverage, depositary, custody relationships |
+| CY | Michalis Louis | Eurobank Limited CEO (merged Hellenic, €28b assets) | Second key banking relationship; bridge into the Greek group network |
+| CY | George Theocharides | CySEC Chairman | The regulator the RAIF / AIFM lives under - the change-of-control CP runs through his house |
+| CY | Petr Valov / Victor Kislyi | Exness CEO / Wargaming founder | Cyprus's largest fintech wealth pools - prime local LP and family-office prospects (secondary sources only) |
+
+Access at small scale: conference-first, not cold-call - SuperReturn (Berlin), Capital Link Invest in Greece (NY, Dec), Delphi Economic Forum and Athens Riviera Forum (where Stathopoulos, Tamvakakis, Fotakidis and Linatsas actually speak), IMN / DDTalks NPL conferences for the distressed crowd. Institutional side runs through DFI relationships (EIF, EIB, EBRD, HDBI) - their DD process itself generates GP introductions. Proven small-scale mechanism: offer advisory-board seats or deal-by-deal co-invests to semi-retired seniors (the Tamvakakis / Karamouzis archetype) - one warm introduction becomes standing counsel and LP credibility.
 
 ---
 
