@@ -1,0 +1,47 @@
+CYPRUS TYRE MARKET - RAW DATA CAPTURE LOG
+Date of research: 2026-08-29
+Environment: Claude Code remote sandbox. ALL outbound HTTPS except github.com/api.github.com/raw.githubusercontent.com and package registries is blocked by the egress proxy (CONNECT 403 / EGRESS_BLOCKED). WebFetch blocked for every domain tested. Only WebSearch (snippet-level) succeeded; search budget (200 calls/session, shared) exhausted mid-task.
+
+== ACCESS TESTS (verbatim outcomes) ==
+curl https://ec.europa.eu/...DS-045409... -> curl: (56) CONNECT tunnel failed, response 403 (proxy: connect_rejected, policy denial)
+curl comtradeapi.un.org / comtrade.un.org / wits.worldbank.org / data.un.org / www.cystat.gov.cy / www.audit.gov.cy / www.moa.gov.cy / greendot.com.cy / tradingeconomics.com / oec.world / docs.google.com / www.google.com -> all 000/403 blocked
+curl api.github.com -> 200 ; raw.githubusercontent.com -> 301 ; github.com -> 400 (reachable)
+WebFetch ec.europa.eu, comtradeapi.un.org, en.wikipedia.org, trendeconomy.com, oec.world -> {"error_type":"EGRESS_BLOCKED"}
+
+== QUANTITATIVE DATA POINTS (all from WebSearch result snippets - NOT verified against primary source pages) ==
+[Q1] Cyprus imports of new pneumatic tyres of rubber (HS 4011) from Germany, 2024: US$7.97 million.
+     Source (search snippet): tradingeconomics.com (UN COMTRADE-based), page family tradingeconomics.com/cyprus/imports/germany/new-pneumatic-tires-rubber. Query: "Cyprus imports of new pneumatic tires" tradingeconomics 2024
+[Q2] Cyprus imports of new pneumatic tyres of rubber from Japan, 2024: US$1.93 million. Same source family (tradingeconomics.com/cyprus/imports/japan/...). Same query.
+[Q3] Cyprus imports of new pneumatic tyres of rubber from China, 2024: US$20.22 million.
+     Source (search snippet): tradingeconomics.com. Query: tradingeconomics "Cyprus imports of new pneumatic tires" from Italy China Greece 2024 million.
+     CAVEAT: link surfaced alongside /cyprus/imports/china/rubbers (HS ch.40 page); attribution to 4011 vs whole chapter 40 not confirmed.
+[Q4] Cyprus imports of "Rubbers and articles" (HS chapter 40) from Germany, 2024: US$10.83 million (tradingeconomics snippet).
+[Q5] Cyprus imports of "Rubbers and articles" (HS chapter 40) from China, 2024: US$23.14 million (tradingeconomics snippet).
+[Q6] Cyprus tyre imports volume: 500,000-600,000 tyres per year.
+     Source: Loizia/Zorpas et al., "Tire waste management system in Cyprus in the framework of circular economy strategy", Environmental Science and Pollution Research (2019), doi 10.1007/s11356-019-05131-z (via search snippets of link.springer.com + weibold.com + tyreandrubberrecycling.com).
+[Q7] ELT collection Cyprus: 1,817 tonnes (2011) -> 7,201 tonnes (2016); 6,691 tonnes used as alternative fuel in cement industry (2016). Same Springer paper via snippet.
+[Q8] Audit Office / Cyprus Mail (2022-02-04, "Around one third of imported scrap tyres evade eco fee", cyprus-mail.com/2022/02/04/around-one-third-of-imported-scrap-tyres-evade-eco-fee/):
+     - 700,000-800,000 tyres imported into Cyprus per year (estimate cited at House Audit Committee)
+     - 65% of tyre imports from non-EU countries -> clear customs, environmental fee collected before release
+     - 35% imported from EU; under the government/Eurogate concession at Limassol port the private operators are not required to check fee payment -> pass without environmental fee
+     - ~EUR 100,000/year lost; ~EUR 500,000 cumulative over the five years since commercialisation of Limassol port operations (2017-2021)
+[Q9] Enerco (tyre-to-fuel processor for Vassiliko Cement), Cyprus Mail 2022-06-15 ("Big number of stored tyres contributed to fire..."):
+     - 2016-2021: received/processed 48,000 tonnes = about 4.5 million tyres (avg ~750,000 tyres/yr; implies ~10.7 kg/tyre blended average - DERIVED)
+     - plus 10,450 tonnes (>800,000 tyres) of accumulated legacy stock collected
+     - ~12,000 tonnes of imported tyres per year end up burned as fuel at Vassiliko cement plant; plant capacity ~9,000-11,000 t/yr
+[Q10] IndexBox Greece tyre market report snippet: Cyprus is the key foreign market for Greek tyre exports, taking 41% of Greek tyre exports (indexbox.io Greece tyres report).
+
+== QUALITATIVE / INSTITUTIONAL ==
+[I1] Audit Office of Cyprus Special Report PE/01/2021 (GR: "Diacheirisi Apovliton Elastikon Ochimaton" / Management of Waste Vehicle Tyres), published 21 April 2021. Catalogued in the Audit Office special reports list (audit.gov.cy; datadev.ouc.ac.cy catalogue). Findings per Cyprus Times snippet: environmental-fee receipts do not itemise tyre categories and quantities; weighbridge documents record only totals by category, so individual consignments cannot be reconciled. Discussed at House Watchdog (Audit) Committee Feb 2022 (Cyprus Mail Q8).
+[I2] ELT collective schemes in Cyprus: TWO licensed collective compliance systems - E4C Ltd (e4c.com.cy, non-profit; issues environmental-fee certificates and coupons per imported tyre) and RTM Tyres Recycling Ltd; individual systems also permitted. Licensed/supervised by the Department of Environment (Ministry of Agriculture, Rural Development and Environment). Sources: ETEK presentation PDF (etek.org.cy), e4c.com.cy, lappa.org/guides/epr/cyprus-epr/, repax.io/epr-in/cyprus (search snippets).
+[I3] Fee mechanics: recycling/environmental fee payable per imported tyre; payment is a prerequisite for customs clearance (extra-EU). Fee varies by tyre category. Exact EUR schedule NOT obtained (e4c.com.cy not fetchable; no snippet carried amounts).
+[I4] Importer register: Department of Environment producer register for tyres exists (registration obligatory for producers/first importers) but the member/importer list could NOT be extracted (moa.gov.cy blocked; search budget exhausted before targeted register search completed).
+[I5] CYSTAT: publishes "Intra & Extra EU Trade Statistics (Commodity by Country)" monthly PDFs and annual "Cyprus External Trade Statistics" volumes via library.cystat.gov.cy; commodity detail in publications is at HS 6-digit level (per publication methodology snippet); CN8 detail not in the free PDFs (available via Eurostat Comext or on request from CYSTAT).
+     Example files seen: library.cystat.gov.cy/NEW/INTRA_EXTRA_EU_TRADE-DEC24-120325.pdf ; library.cystat.gov.cy/NEW/Cyprus_External_Trade_Statistics-2020_VOLI-130122.pdf
+
+== NOT OBTAINED (blocked) ==
+- Comext DS-045409 CN8 tables (value EUR, qty 100kg, supplementary units) 2019-2025, imports & exports
+- UN Comtrade totals for CY 4011/4012/4013 (any year) -> no Comtrade-vs-Comext variance possible
+- Partner top-10 table for latest year
+- E4C/RTM fee schedules, member lists, declared tonnages per year
+- Audit Office PDF of PE/01/2021

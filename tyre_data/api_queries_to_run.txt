@@ -1,0 +1,29 @@
+# READY-TO-RUN QUERIES (blocked in this sandbox; run from an unrestricted network)
+# Eurostat Comext DS-045409 (EU trade since 1988 by HS2-4-6 and CN8), annual, reporter Cyprus.
+# flow: 1=import, 2=export; partner=WORLD avoids INT/EXT double counting.
+# Indicators: VALUE_IN_EUROS, QUANTITY_IN_100KG, SUPPLEMENTARY_QUANTITY (for 4011/4012 new tyres CN8 lines suppl. unit = p/st i.e. UNITS - verify label in response metadata).
+
+BASE=https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data/DS-045409
+
+# HS4 aggregates, imports+exports, 2019-2025:
+$BASE?freq=A&reporter=CY&partner=WORLD&product=4011&flow=1&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&indicators=SUPPLEMENTARY_QUANTITY&time=2019&time=2020&time=2021&time=2022&time=2023&time=2024&time=2025&format=JSON
+  ... repeat with product=4012, product=4013 and with flow=2
+
+# CN8 detail (imports), same time span - one call per code or comma/repeated params:
+products: 40111000 (passenger car), 40112010 (bus/lorry load index <=121), 40112090 (bus/lorry >121),
+          40113000 (aircraft), 40114000 (motorcycle), 40115000 (bicycle),
+          40117000 (agricultural/forestry), 40118000 (construction/mining/industrial), 40119000 (other),
+          40121100 40121200 40121300 40121900 (retreaded by type), 40122000 (used), 40129020 40129090 (solid/cushion),
+          40131000 (inner tubes car/bus/lorry), 40132000 (bicycle), 40139000 (other)
+$BASE?freq=A&reporter=CY&partner=WORLD&product=40111000&flow=1&indicators=VALUE_IN_EUROS&indicators=QUANTITY_IN_100KG&indicators=SUPPLEMENTARY_QUANTITY&time=2019&time=2020&time=2021&time=2022&time=2023&time=2024&time=2025&format=JSON
+
+# Partner breakdown, latest full year (2025), imports HS4:
+$BASE?freq=A&reporter=CY&product=4011&flow=1&indicators=VALUE_IN_EUROS&indicators=SUPPLEMENTARY_QUANTITY&time=2025&format=JSON
+  (omit partner= to get all partners; then rank; or use easy-comext UI: https://ec.europa.eu/eurostat/comext/newxtweb/)
+
+# UN Comtrade cross-check (Cyprus reporter=196), free public API (subscription-key optional for low volume):
+https://comtradeapi.un.org/data/v1/get/C/A/HS?reporterCode=196&period=2019,2020,2021,2022,2023,2024&partnerCode=0&flowCode=M&cmdCode=4011,4012,4013&includeDesc=true
+legacy: https://comtrade.un.org/api/get?max=500&type=C&freq=A&px=HS&ps=2023&r=196&p=0&rg=1&cc=4011,4012,4013
+
+# CYSTAT summarised trade PDFs (HS6 max in free pubs):
+https://library.cystat.gov.cy/NEW/INTRA_EXTRA_EU_TRADE-DEC24-120325.pdf
