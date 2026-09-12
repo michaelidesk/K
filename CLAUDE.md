@@ -2,86 +2,62 @@
 
 Guidance for Claude Code (and other AI assistants) working in this repository.
 
-## Current status
-
-> **This repository is currently empty.** As of the last update to this file,
-> `michaelidesk/k` contained no source code, build configuration, or history —
-> only this document. There is no codebase structure, tech stack, or workflow
-> to describe yet.
->
-> **This file is a scaffold, not a description of an existing project.** Treat
-> every section below as a template to fill in — not as an account of code that
-> exists. Do not assume any language, framework, or tooling is present until you
-> have verified it in the repository.
-
-## How to update this file
-
-When real code lands, replace the placeholders below with facts you have
-verified by reading the repository. Keep this file accurate and concise:
-
-- Document only what actually exists — no aspirational or invented conventions.
-- Prefer specifics (exact commands, real paths) over generalities.
-- Re-run `/init` or refresh the relevant sections whenever the structure,
-  stack, or workflows change materially.
-
----
-
 ## Project overview
 
-<!-- What this project does, who it's for, and its high-level architecture.
-     Fill in once code exists. -->
+Working repository for Konstantinos Michaelides (Partner, Impactus Private
+Equity Group; CEO, Vertu Projects Ltd). It holds Claude Code skills and
+supporting material used across the Impactus fund platform and Vertu's
+fiduciary, tax and licensing practice.
 
-_To be documented._
+It is not an application. There is no build, no test suite and no runtime - the
+deliverables are skills and documents that Claude Code reads.
 
 ## Repository structure
 
-<!-- Map the important directories and what lives in each. Example:
-     - `src/`      — application source
-     - `tests/`    — test suites
-     - `scripts/`  — dev/CI helper scripts
--->
+```
+.claude/skills/origination/   Origination and targeting pipeline skill
+├── SKILL.md                  The eight-stage pipeline, Stage 0 to Stage 7
+├── references/
+│   ├── compliance-gate.md    AIFMD, GDPR and ePrivacy gate - read before any outreach
+│   ├── data-sources.md       Registry path (free) and Apollo path (paid), tool routing
+│   └── icp-library.md        Standing ICPs per book, with disqualifiers
+└── assets/
+    ├── dossier-template.md   Per-target research output
+    └── targets-template.csv  Target universe row schema
+```
 
-_To be documented._
+Pipeline runs are written to `runs/YYYY-MM-DD-<book>-<slug>/` and are the audit
+trail for how any contact list was built.
 
 ## Tech stack
 
-<!-- Language(s), framework(s), runtime versions, package manager. Verify from
-     manifest files (package.json, pyproject.toml, go.mod, Cargo.toml, etc.). -->
-
-_To be documented._
+Markdown and CSV. No dependencies, no toolchain.
 
 ## Development workflow
 
-<!-- The commands a developer actually runs. Fill in real, verified commands: -->
+Nothing to install, build or run. Edit the Markdown, commit, push.
 
-```bash
-# Install dependencies
-# <command>
-
-# Run the app / dev server
-# <command>
-
-# Run tests
-# <command>
-
-# Lint / format
-# <command>
-
-# Build
-# <command>
-```
-
-_To be documented._
+Skills are loaded by Claude Code from `.claude/skills/`. To validate a change to
+the origination skill, invoke it on a real request and check that Stage 0 picks
+the right book and that Stage 6 blocks fund-related outreach.
 
 ## Conventions
 
-<!-- Code style, naming, branching model, commit message format, test
-     expectations, and any project-specific rules an assistant must follow. -->
-
-_To be documented._
+- Currency as €x with a letter suffix: €2.5m, €140m, €1.2b.
+- Hyphens, not em dashes.
+- Tables for comparisons and economics.
+- Any document referencing the funds carries the AIFMD Art.23 disclaimer.
+- Legal and regulatory citations are given so they can be checked. Anything
+  unconfirmed is marked **[verify]** rather than asserted - the skills are used
+  in a regulated context and a confident wrong citation is worse than a flagged
+  gap.
+- Default jurisdiction: Cyprus, Greece, EU.
 
 ## Git workflow
 
-- Default branch: _to be established once the repo has commits._
+- Default branch: `main`.
 - Do not commit secrets, credentials, or large binaries.
+- Do not commit target lists, contact data, or dossiers containing personal
+  data. `runs/` is working output and is git-ignored - contact data belongs in
+  the firm's own systems under its retention policy, not in a repository.
 - Write clear, descriptive commit messages.
