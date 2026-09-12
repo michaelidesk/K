@@ -90,3 +90,46 @@ Trigger events are what make an approach land. Watch, per book:
 - **Capital mapping (research only, no outbound):** newly registered Cyprus
   family office structures, published LP commitments in comparable regional
   funds, family liquidity events from published M&A.
+
+## Path D - Professional-body registers (the adviser channel)
+
+Verified 12 September 2026. These are the harvest surfaces for Book 1's adviser
+channel - departure-jurisdiction professionals who hold relocating clients and
+have no Cyprus arm. All are free. Marked **[verify]** where the directory was
+named from practitioner knowledge but not confirmed in that run.
+
+| Jurisdiction | Register | Why this one | Status |
+|---|---|---|---|
+| Sweden | FAR member search, `far.se/medlem/sok-far-medlem/` | 5,000+ members, ~900 firms, and it registers **authorised tax advisers** as a category - the exact channel | Verified |
+| Sweden | Sveriges advokatsamfund, `advokatsamfundet.com/find-a-lawyer/` | Searchable by area of law (skatterätt), town, firm, language | Verified |
+| Sweden | Revisorsinspektionen, `revisorsinspektionen.se/revisorssok/` | State auditor register - use to confirm standing, not to prospect | Verified |
+| UK | STEP, `step.org/directory/members/search` | Searchable by member, firm, branch, jurisdiction. The best surface for displaced non-dom work | Verified |
+| UK | CIOT Find a Member, via `portal.tax.org.uk` | Chartered Tax Advisers | Verified, confirm live path |
+| UK | ICAEW, `find.icaew.com/search` | Broad - unusable without a tax-service filter | Verified |
+| UK | The Law Society find-a-solicitor | Private client and tax filters | [verify] |
+| Germany | Amtliches Steuerberaterverzeichnis, `steuerberaterverzeichnis.berufs-org.de` | Official, free, **complete** national register of every appointed Steuerberater and practice, searchable by postcode. DATEV's separate search closed 31 December 2025 | Verified - best German source |
+| Germany | Regional Steuerberaterkammern (16) | Regional segmentation; Bavaria and NRW hold the Mittelstand density | Verified |
+| Germany | BRAK Anwaltsverzeichnis - Fachanwalt für Steuerrecht | The precise filter for §6 AStG work | [verify] |
+| Germany | Wirtschaftsprüferkammer Berufsregister | Auditors, lower relevance than Steuerberater | [verify] |
+| Denmark | FSR - danske revisorer, `fsr.dk` | 800 firm members, 6,000 personal | [verify] directory access |
+| Norway | Advokatforeningen member search; also `advokatenhjelperdeg.no` | Two harvest surfaces, members profile free on the second | Verified |
+| Finland | Suomen Asianajajaliitto, `findanattorney.fi` | Includes associates as well as principals, so contact depth is better than most bar directories | Verified |
+| Iceland | FLE / Lögmannafélag Íslands | Could not verify. Market too small to justify the effort | [verify], deprioritise |
+| China | CICPA, `cicpa.org.cn` | **No public member directory found.** Cold email into the mainland is low-yield; the working channel is Hong Kong intermediaries, private banks and WeChat referral | Not a harvest surface |
+| Hong Kong | HKICPA; Law Society of Hong Kong | The realistic entry point for Chinese outbound wealth. Treat as its own segment | [verify] |
+| Cross-border | IFA national branches, `ifa.nl` | Branch member lists are the highest-quality cross-border tax audience where published | [verify] |
+
+### The alliance route, which may beat the email
+
+International accounting alliances admit roughly one firm per country, which
+makes the seats a scarce asset rather than a marketing channel. Alliott Global
+Alliance reports generating USD 11.4m of referral income for members in 2022
+across 235 firms - that is the benchmark to judge a cold campaign against.
+
+**AGA's Cyprus seat is already held** (Alliott Partellas Kiliaris Ltd), so it is
+likely closed. GGI, Kreston Global, Nexia and PrimeGlobal need checking for
+Cyprus availability. GGI has the strongest Germany and Nordics density, which
+are the two markets that matter for this book.
+
+Run this in parallel with the outreach, not instead of it, and open it before a
+competitor takes the remaining seats.
