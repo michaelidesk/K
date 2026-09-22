@@ -1,0 +1,61 @@
+# Internal (Impactus-sourced) data for the workbook. Sources are the Sponsor's own
+# September 2026 materials read from SharePoint / Outlook in this session.
+
+RAISE_PARAMS = [
+    # (item, value, unit, source, comment)
+    ("Sub-fund / vehicle", "Impactus Pyrolysis Ltd (IPL) - sponsor vehicle of Thermo Lysi S.A.", "", "Thermolysi Company Snapshot Sep 2026 v2", ""),
+    ("Current ask (IPL)", 5.0, "€m", "Indicative Term Sheet 11-09-2026 v2", "Share capital increase, €50m pre-money, c.9.1% at full subscription"),
+    ("Target return (IPL)", "22% IRR / 3.0x over 5 years", "", "Sponsor IM Feb 2026", "Gross; to be refreshed on firm EPC price (31-10-2026)"),
+    ("Plant capacity", 45, "ktpa", "Snapshot p.5", "Two lines of 22.5ktpa; six Pyrum TD3 reactors"),
+    ("Plant capex (PwC Iteration 3 v.6)", 118.5, "€m", "Snapshot p.9", "2 x €59.2m; PMO 02-09-2026 flags €120m vs €150m unresolved"),
+    ("Total sources of funds", 176.0, "€m", "Snapshot p.9", "Includes development, fees, WC, reserves"),
+    ("EU Innovation Fund grant (signed 09-03-2026)", 29.4, "€m", "GAP-101250821", "Lump sum; WP1 €2.06m, WP2 €24.4m at entry into operation"),
+    ("Shareholder capital committed", 21.0, "€m", "Snapshot p.9", "€15m equity + €6m shareholder loans at 10% simple"),
+    ("VAT facility", 13.3, "€m", "Snapshot p.9", "Construction VAT bridge"),
+    ("Venture debt tranche (offered, not committed)", 35.0, "€m", "Snapshot p.9", "4% cash + 5% PIK + warrants; 10% blended; offered to an institutional investor (HIIF)"),
+    ("Senior facility (Credia Bank term sheet)", 77.4, "€m", "Snapshot p.9; Credia LOI thread Aug 2026", "Sized at 1.5x DSCR; indicative 6.5% p.a., 4+10y, 1.3x average DSCR; credit approval on firm EPC price"),
+    ("EIB Venture Debt", "In process", "", "EIB responses thread 15-09-2026", "Committee discussed project; clarifications requested (Credia CPs, Continental audit letter, Sokolov comparison)"),
+    ("2031 revenue (PwC model)", 36.1, "€m", "Snapshot p.7", "rCB €1,500/t, TPO €845/t, steel €250/t, gate fee €100/t, carbon €25/t"),
+    ("2031 EBITDA (PwC model)", 21.9, "€m", "Snapshot p.7", "€489 EBITDA per tonne"),
+    ("Gate fee contracted today", 62, "€/t", "PMO MoM 03-09-2026", "On 11ktpa only vs €100/t on 45ktpa in the model - the swing item"),
+    ("FID target", "31-12-2026 (PMO: not feasible; controlled reset proposed)", "", "PMO MoM 03-09-2026", "Firm EPC offer 31-10-2026; ECI to 18-11-2026"),
+    ("Sub-fund / vehicle", "CPEF I Curity Ltd - holds 33.75% of Curity Pharma S.A.", "", "Investor Pack Q2 2026", ""),
+    ("Current instrument (CPEF)", "8% CPEF I Curity Note, 48 months, up to €435k, min €10k", "", "Note term sheet 2026", "Back-to-back to Curity convertible loan; conversion fallback at €22.2m valuation (~1.96%)"),
+    ("Curity Pharma last-marked equity value", 22.2, "€m", "Capital increase 2025-26", "Facility €14m; EOF GMP licence; Larissa; Galenica distribution from Oct 2026"),
+    ("Curity stressed plan (Meerkat FY2023)", "3.5m g at €3.00/g -> revenue €10.5m, EBITDA c.€5.3m", "", "Meerkat valuation 31-12-2023, App. IV", "Base case €4.85/g -> €24.8m sales, €18.8m EBITDA (Sponsor figures, not diligenced)"),
+    ("Curity existing bank debt (plan)", 5.57, "€m", "Meerkat valuation 31-12-2023", "Greek commercial bank, 6-8y; plus €2.8m grant bridge"),
+    ("Platform raise (IVP)", 88.0, "€m", "Investor Pack Q2 2026", "4 assets, €410m platform capital, 21.8% / 29.5% blended gross IRR"),
+    ("PE Fund coupon", "8% p.a. net, paid since 2022", "", "Investor Pack Q2 2026", "Internal note Aug 2025: c.€3m needed for 2027-28 opex and coupon - DD challenge (see memo)"),
+]
+
+# Existing / warm pipeline drawn from the Sponsor's own investor tracker (03-08-2026 and earlier tabs),
+# the Credia / EIB / Sirec threads and Fathom call records.
+EXISTING_PIPELINE = [
+    # (counterparty, type, relationship owner, status/last step, relevance, suggested next action, source)
+    ("Credia Bank (Structured Finance) - Evangelos Mitrou, Christos Masouras, Christos Iliopoulos", "Greek bank - senior project debt", "KM / Venero", "Non-binding LOI for CINEA delivered Aug 2026; indicative 6.5%, 4+10y, 1.3x DSCR; credit process on firm EPC price", "IPL senior", "Bring firm EPC price 31-10; run TÜV Nord TDD in parallel; agree CP list (Papageorgantas list of 15-09)", "Outlook thread 'Credia <> Impactus' Jul-Aug 2026"),
+    ("EIB Venture Debt team (Stephan)", "DFI - venture debt", "KM / Sirec Energy", "Committee discussed project 14-09-2026; clarifications on Credia CPs, Continental audit letter, Sokolov comparison", "IPL VD €35m alternative / complement", "Answer three questions within the week; obtain Continental supplier-approval letter via Pyrum", "Outlook 'EIB responses - follow up' 15-09-2026"),
+    ("HIIF (institutional investor assessing €35m VD)", "Impact / infrastructure investor", "KM", "€35m at 10% blended offered; internal assessment; Impactus priority: firm commitment by Dec 2026", "IPL VD", "Re-cut as staged commitment (development tranche now, construction tranche at FID) before the PMO reset reaches them", "PMO MoM 03-09-2026; Snapshot p.9"),
+    ("Sirec Energy (George Papageorgantas, Dionissis Alissandratos)", "Greek energy fund - co-investor", "KM", "Term sheet executed Mar 2026 at c.€34m post-money for Thermo Lysi; advising on EIB", "IPL equity / advisory", "Use as reference co-investor in outreach; ask for EIB and Greek bank introductions", "Outlook 17-09-2026 to Muhanna; EIB thread"),
+    ("EMMA Capital", "Investor - term sheet", "AM", "TS submitted 15-10-2025; €4.54m loan capital referenced", "IPL / Thermo Lysi", "Confirm status; if lapsed, re-approach with Sep 2026 pack", "Investor tracker 22-10-2025"),
+    ("Argus Management (AIFM) channel: ETYK, PEO, Cyta, Lawyers' Provident Funds; JP Morgan, Blackstone, Schroders", "Cyprus provident funds / global AMs via AIFM", "AM / Argus", "ETYK and PEO €1m each estimated; IVP deck presented to three banks - initial interest", "IPL €5m; IVP", "Convert ETYK/PEO IC presentations; structure a fund-level note the provident funds can hold", "Investor tracker 03-08-2026"),
+    ("Muhanna & Co (Marinos Theodosiou) - Doctors' Provident Fund (Tameio Iatron)", "Cyprus pension administrator / LP", "KM", "Existing shareholder (415 shares, 4.73%); EY audit queries on fair value answered 17-09-2026", "IPL follow-on; gateway to other funds", "Close the IFRS 13 point with EY; then ask Muhanna for introductions to the other funds it administers", "Outlook 'Re: Impactus Pyrolisis' 17-09-2026"),
+    ("KPMG Cyprus (Christos Vasiliou)", "Adviser - placement mandate €150-200m", "AM", "Mandate to raise c.€150-200m (Oct 2025); KPMG Sweden follow-up", "IVP", "Demand a named target list and a 90-day plan from KPMG; tie fee to first close", "Investor tracker 22-10-2025"),
+    ("Axia Ventures (Antonis Achilleoudis)", "Greek/Cypriot investment bank", "AM", "Meetings Athens 2025; Infiniteria update", "IVP / IPL", "Ask Axia to run a targeted process with Greek family offices and Piraeus/Eurobank PF desks", "Investor tracker"),
+    ("Venero Capital Advisors (Argyris Chatzilias, Giannos Politis)", "Capital advisor - engaged", "KM", "Running Credia LOI; 'KM & AC to meet Pascal'", "IPL debt", "Mandate Venero to open two alternative senior/ VD lenders as competitive tension to Credia", "Credia thread"),
+    ("Oak Chase Global", "Capital introduction - ~180 investors", "KM", "Call 20-03-2026; NDA and VDR access; €100m equity for €340m pipeline", "IVP", "Check output since March; if none, drop", "Fathom 20-03-2026"),
+    ("Sergo Vashakmadze", "Intermediary - success fee 5% equity / 2.5% debt", "KM", "Call 23-06-2025; mentioned €200b AUM asset manager private credit interest", "IPL mezz / VD", "Only re-engage on a named-investor basis; no retainer", "Fathom 23-06-2025"),
+    ("Antin Infrastructure Partners", "Infrastructure GP (Enviro/Michelin pyrolysis JV investor)", "Argus", "'Secure EoI' Apr 2026", "IVP / exit", "Position as later-stage buyer; keep informed at FID", "Investor tracker 17-04-2026"),
+    ("Alpha Bank Wealth Management Greece (Miltos Michailas) / 'Cooperation Alpha Bank <> Impactus'", "Greek bank - private banking distribution", "AM / KM", "1-pagers sent 09-09-2026", "CPEF note, IPL, PE Fund", "Agree a private-placement distribution arrangement for professional clients", "Outlook 09-09-2026"),
+    ("AstroBank (c/o Charis Kynigou)", "Cyprus bank / investor", "AM", "€702k deposited 2025; additional €500k discussed", "IPL", "Follow up on the additional €500k against the Sep 2026 pack", "Investor tracker"),
+    ("Ahmed & Reem Kurdi", "Private investor (KPMG intro)", "AM", "€250k confirmed IPL; €50k CPEF", "IPL / CPEF", "Close documentation", "Investor tracker 03-08-2026"),
+    ("ELPEN Family Office (via DP)", "Greek pharma family office", "DP", "€500k CPEF (convertible-backed) + €500k IPL discussed Apr 2026", "CPEF / IPL", "Re-open: ELPEN is the natural strategic for Curity", "Investor tracker 17-04-2026"),
+    ("Rachel Koen / Safra Bank", "Private bank", "AM", "IVP deck to Safra's investment analysis director", "IVP", "Follow up", "Investor tracker"),
+    ("Serena Capital Partners", "Investor", "KM", "Awaiting Pyrum supervisory board commitment", "IVP", "Follow up", "Investor tracker"),
+    ("T2Y Capital", "Investor", "KM", "Follow up once Pyrum agreement in place", "IVP", "Follow up", "Investor tracker 22-10-2025"),
+    ("Enrico Cattabiani - IDN / Infrastructure Network (Perl Besch / IVP)", "Infrastructure deal network", "KM", "Checking in Sep 2026; waiting on Pyrum", "IVP", "Send Sep 2026 snapshot", "Outlook 04-09-2026"),
+    ("Kinisis Ventures (Andreas)", "Cyprus VC - seeking LPs itself", "KM", "Follow up Jul 2026 (their own raise)", "Low", "Reciprocal introductions only", "Outlook 10-07-2026"),
+    ("Marios Constantinou (cytaxaudit)", "Private investor - CPEF note", "KM / MI", "€150k+ subscribed Aug 2026 to CPEF note", "CPEF", "Ask for referrals within his client base", "Outlook Aug 2026"),
+    ("Athlos Capital", "Cyprus asset manager (manages CPEF cash)", "MI", "Monthly valuation reports; launching UBS-issued AMC", "Distribution", "Explore an AMC / certificate wrapper for the Impactus fixed-income products", "Outlook 21-09-2026"),
+    ("Archirodon Group", "EPC contractor - expressed interest as operations partner", "KM", "ECI Addendum 24-08-2026; interest in O&M role", "IPL - strategic", "Explore contractor equity or deferred-payment component in the EPC as quasi-mezz", "Snapshot p.8"),
+    ("Pyrum Innovations AG", "Technology provider (BASF, Continental investors)", "KM", "Letter 18-12-2025; supply agreement at FID", "IPL - strategic", "Request Continental supplier-approval letter for EIB; explore Pyrum equity roll-in", "Snapshot p.6; EIB thread"),
+]
